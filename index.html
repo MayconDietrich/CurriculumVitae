@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+
+  <main>
+    <form action="/action_page.php">
+      <fieldset class="secondary">
+        <legend class="title">&nbsp; Dados Pessoais &nbsp;</legend>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Identificação</legend>
+          <table style="width: 100%;">
+            <tr style="display: flex; flex-direction: column;">
+              <label for="nome">Nome completo:</label>
+              <input type="text" id="nome" name="nome" style="width: 99%;">
+            </tr>
+            <tr>
+              <td>
+                <label for="nacionalidade">Nacionalidade:</label>
+              </td>
+              <td>
+                <label for="cpf">CPF:</label>
+              </td>
+              <td>
+                <label for="passaporte">Número do Passaporte:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="nacionalidade" id="nacionalidade">
+                  <option value=""></option>
+                  <option value="brasileira">Brasileira</option>
+                  <option value="estrangeira">Estrangeira</option>
+                </select>
+              </td>
+              <td>
+                <input type="number" id="cpf" name="cpf">
+              </td>
+              <td>
+                <input type="number" id="passaporte" name="passaporte">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Dados de Nascimento</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="pais">País:</label>
+              </td>
+              <td>
+                <label for="UFname">UF:</label>
+              </td>
+              <td>
+                <label for="cidade">Cidade:</label>
+              </td>
+              <td>
+                <label for="data">Data:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="pais" id="pais">
+                  <option value=""></option>
+                  <option value="brasileira">Brasil</option>
+                  <option value="estrangeira">Outro</option>
+                </select>
+              </td>
+              <td>
+                <select name="UFname" id="UFname">
+                  <option value=""></option>
+                  <option value="0">RO</option>
+                  <option value="1">AC</option>
+                  <option value="2">AM</option>
+                  <option value="3">RR</option>
+                  <option value="4">PA</option>
+                  <option value="5">AP</option>
+                  <option value="6">TO</option>
+                  <option value="7">MA</option>
+                  <option value="8">PI</option>
+                  <option value="9">CE</option>
+                  <option value="10">RN</option>
+                  <option value="11">PB</option>
+                  <option value="12">PE</option>
+                  <option value="13">AL</option>
+                  <option value="14">SE</option>
+                  <option value="15">BA</option>
+                  <option value="16">MG</option>
+                  <option value="17">ES</option>
+                  <option value="18">RJ</option>
+                  <option value="19">SP</option>
+                  <option value="20">PR</option>
+                  <option value="21">SC</option>
+                  <option value="22">RS</option>
+                  <option value="23">MS</option>
+                  <option value="24">MT</option>
+                  <option value="25">GO</option>
+                  <option value="26">DF</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" id="cidade" name="cidade">
+              </td>
+              <td>
+                <input type="date" id="data" name="data">
+              </td>
+            </tr>
+          </table>
+
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Sexo</legend>
+          <table>
+            <tr>
+              <td>
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Identidade</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="numero">Número:</label>
+              </td>
+              <td>
+                <label for="orgao">Órgão Emissor:</label>
+              </td>
+              <td>
+                <label for="UFnamee">UF:</label>
+              </td>
+              <td>
+                <label for="dataa">Data:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" id="numero" name="numero">
+              </td>
+              <td>
+                <input type="text" id="orgao" name="orgao">
+              </td>
+              <td>
+                <select name="UFnamee" id="UFnamee">
+                  <option value=""></option>
+                  <option value="0">RO</option>
+                  <option value="1">AC</option>
+                  <option value="2">AM</option>
+                  <option value="3">RR</option>
+                  <option value="4">PA</option>
+                  <option value="5">AP</option>
+                  <option value="6">TO</option>
+                  <option value="7">MA</option>
+                  <option value="8">PI</option>
+                  <option value="9">CE</option>
+                  <option value="10">RN</option>
+                  <option value="11">PB</option>
+                  <option value="12">PE</option>
+                  <option value="13">AL</option>
+                  <option value="14">SE</option>
+                  <option value="15">BA</option>
+                  <option value="16">MG</option>
+                  <option value="17">ES</option>
+                  <option value="18">RJ</option>
+                  <option value="19">SP</option>
+                  <option value="20">PR</option>
+                  <option value="21">SC</option>
+                  <option value="22">RS</option>
+                  <option value="23">MS</option>
+                  <option value="24">MT</option>
+                  <option value="25">GO</option>
+                  <option value="26">DF</option>
+                </select>
+              </td>
+              <td>
+                <input type="date" id="dataa" name="dataa">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Filiação</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="pai">Nome do Pai:</label>
+              </td>
+              <td>
+                <label for="mae">Nome da Mãe:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="pai" name="pai">
+              </td>
+              <td>
+                <input type="text" id="mae" name="mae">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </fieldset>
+      </fieldset>
+      <fieldset class="secondary">
+        <legend class="title">&nbsp; Endereço &nbsp;</legend>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Endereço Profissional</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="fname">Empresa/Instituição:</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <input type="text" id="fname" name="fname" style="width: 98.5%;">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lname">Logradouro:</label>
+              </td>
+              <td colspan="3">
+                <label for="enderecas">Endereço:</label>
+              </td>
+              <td>
+                <label for="bairro">Bairro:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="lname" id="lname">
+                  <option value=""></option>
+                  <option value="0">Área Especial</option>
+                  <option value="1">Avenida</option>
+                  <option value="2">Bloco</option>
+                  <option value="3">Chácara</option>
+                  <option value="4">Condomínio</option>
+                  <option value="5">Rua</option>
+                  <option value="6">Vila</option>
+                </select>
+              </td>
+              <td colspan="3">
+                <input type="text" id="enderecas" name="enderecas" style="width: 98%;">
+              </td>
+              <td>
+                <input type="text" id="bairro" name="bairro">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pais2">País:</label>
+              </td>
+              <td>
+                <label for="Ufname">UF:</label>
+              </td>
+              <td colspan="2">
+                <label for="Cname">Cidade:</label>
+              </td>
+              <td>
+                <label for="CEPname">CEP:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="pais2" name="pais2">
+              </td>
+              <td>
+                <select name="Ufname" id="Ufname">
+                  <option value=""></option>
+                  <option value="0">RO</option>
+                  <option value="1">AC</option>
+                  <option value="2">AM</option>
+                  <option value="3">RR</option>
+                  <option value="4">PA</option>
+                  <option value="5">AP</option>
+                  <option value="6">TO</option>
+                  <option value="7">MA</option>
+                  <option value="8">PI</option>
+                  <option value="9">CE</option>
+                  <option value="10">RN</option>
+                  <option value="11">PB</option>
+                  <option value="12">PE</option>
+                  <option value="13">AL</option>
+                  <option value="14">SE</option>
+                  <option value="15">BA</option>
+                  <option value="16">MG</option>
+                  <option value="17">ES</option>
+                  <option value="18">RJ</option>
+                  <option value="19">SP</option>
+                  <option value="20">PR</option>
+                  <option value="21">SC</option>
+                  <option value="22">RS</option>
+                  <option value="23">MS</option>
+                  <option value="24">MT</option>
+                  <option value="25">GO</option>
+                  <option value="26">DF</option>
+                </select>
+              </td>
+              <td colspan="2">
+                <input type="text" id="Cname" name="Cname">
+              </td>
+              <td>
+                <input type="number" id="CEPname" name="CEPname">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="ddd">DDD:</label>
+              </td>
+              <td>
+                <label for="fone">Fone:</label>
+              </td>
+              <td>
+                <label for="ramal">Ramal:</label>
+              </td>
+              <td>
+                <label for="fax">Fax:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" id="ddd" name="ddd">
+              </td>
+              <td>
+                <input type="number" id="fone" name="fone">
+              </td>
+              <td>
+                <input type="number" id="ramal" name="ramal">
+              </td>
+              <td>
+                <input type="number" id="fax" name="fax">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <label for="hpage">Homepage Pessoal:</label>
+              </td>
+              <td colspan="4">
+                <label for="email">E-mail:</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="text" id="hpage" name="hpage" style="width: 98%;">
+              </td>
+              <td colspan="4">
+                <input type="text" id="email" name="email" style="width: 98%;">
+              </td>
+            </tr>
+          </table>
+          
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Endereço Residêncial</legend>
+
+          <table>
+            <tr>
+              <td>
+                <label for="logras">Logradouro:</label>
+              </td>
+              <td colspan="3">
+                <label for="enderas">Endereço:</label>
+              </td>
+              <td>
+                <label for="bairro2">Bairro:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="logras" id="logras">
+                  <option value=""></option>
+                  <option value="0">Área Especial</option>
+                  <option value="1">Avenida</option>
+                  <option value="2">Bloco</option>
+                  <option value="3">Chácara</option>
+                  <option value="4">Condomínio</option>
+                  <option value="5">Rua</option>
+                  <option value="6">Vila</option>
+                </select>
+              </td>
+              <td colspan="3">
+                <input type="text" id="enderas" name="enderas" style="width: 98%;">
+              </td>
+              <td>
+                <input type="text" id="bairro2" name="bairro2">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="moes">País:</label>
+              </td>
+              <td>
+                <label for="ufname">UF:</label>
+              </td>
+              <td colspan="2">
+                <label for="cidas">Cidade:</label>
+              </td>
+              <td>
+                <label for="cepas">CEP:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="moes" name="moes">
+              </td>
+              <td>
+                <select name="ufname" id="ufname">
+                  <option value=""></option>
+                  <option value="0">RO</option>
+                  <option value="1">AC</option>
+                  <option value="2">AM</option>
+                  <option value="3">RR</option>
+                  <option value="4">PA</option>
+                  <option value="5">AP</option>
+                  <option value="6">TO</option>
+                  <option value="7">MA</option>
+                  <option value="8">PI</option>
+                  <option value="9">CE</option>
+                  <option value="10">RN</option>
+                  <option value="11">PB</option>
+                  <option value="12">PE</option>
+                  <option value="13">AL</option>
+                  <option value="14">SE</option>
+                  <option value="15">BA</option>
+                  <option value="16">MG</option>
+                  <option value="17">ES</option>
+                  <option value="18">RJ</option>
+                  <option value="19">SP</option>
+                  <option value="20">PR</option>
+                  <option value="21">SC</option>
+                  <option value="22">RS</option>
+                  <option value="23">MS</option>
+                  <option value="24">MT</option>
+                  <option value="25">GO</option>
+                  <option value="26">DF</option>
+                </select>
+              </td>
+              <td colspan="2">
+                <input type="text" id="cidas" name="cidas">
+              </td>
+              <td>
+                <input type="number" id="cepas" name="cepas">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dedas">DDD:</label>
+              </td>
+              <td>
+                <label for="tele">Fone:</label>
+              </td>
+              <td>
+                <label for="ramas">Ramal:</label>
+              </td>
+              <td>
+                <label for="faxas">Fax:</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" id="dedas" name="dedas">
+              </td>
+              <td>
+                <input type="number" id="tele" name="tele">
+              </td>
+              <td>
+                <input type="number" id="ramas" name="ramas">
+              </td>
+              <td>
+                <input type="number" id="faxas" name="faxas">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <label for="homepg">Homepage Pessoal:</label>
+              </td>
+              <td colspan="4">
+                <label for="mail">E-mail:</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="text" id="homepg" name="homepg" style="width: 98%;">
+              </td>
+              <td colspan="4">
+                <input type="text" id="mail" name="mail" style="width: 98%;">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Endereço Preferencial</legend>
+          <input type="radio" name="enderecoP" id="residencial">
+          <label for="residencial">Residencial</label>
+          <input type="radio" name="enderecoP" id="profissional">
+          <label for="profissional">Profissional</label>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Endereço Preferencial Para Correspondência</legend>
+          <input type="radio" name="enderecoc" id="profissionalc">
+          <label for="profissionalc">Profissional</label>
+          <input type="radio" name="enderecoc" id="residencialc">
+          <label for="residencialc">Residêncial</label>
+        </fieldset>
+      </fieldset>
+      <fieldset class="secondary">
+        <legend class="title">&nbsp; Formação Acadêmica/Titulação &nbsp;</legend>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Formação</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="nivelFor">Nível (maior):</label>
+              </td>
+              <td>
+                <label for="horas">Carga Horária</label>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 10rem;">
+                <select name="nivelFor" id="nivelFor">
+                  <option value=""></option>
+                  <option value="1">Graduação</option>
+                  <option value="2">Aperfeiçoamento</option>
+                  <option value="3">Especialização</option>
+                  <option value="4">Mestrado</option>
+                  <option value="5">Doutorado</option>
+                </select>
+              </td>
+              <td>
+                <input type="number" id="horas" name="horas">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Instituição/Curso</legend>
+          <table>
+            <tr>
+              <td colspan="2">
+                <label for="instituicao">Instituição</label>
+              </td>
+              <td colspan="2">
+                <label for="curso">Nome do Curso</label>
+              </td>
+              <td>
+                <label for="status">Status do Curso:</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="text" id="instituicao" name="instituicao" style="width: 98%;">
+              </td>
+              <td colspan="2">
+                <input type="text" id="curso" name="curso" style="width: 96.5%;">
+              </td>
+              <td>
+                <select name="status" id="status">
+                  <option value=""></option>
+                  <option value="1">Em Andamento</option>
+                  <option value="2">Título obtido</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="periodo">Período (ano):</label>
+              </td>
+              <td>
+                <label for="titulo">Título da Monografia/Dissertação/Tese</label>
+              </td>
+              <td colspan="2">
+                <label for="oreintador">Nome completo do Orientador</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="periodo" id="periodo">
+                  <option value=""></option>
+                  <option value="1">Início</option>
+                  <option value="2">Conclusão</option>
+                  <option value="3">Obtenção do título</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" id="titulo" name="titulo" style="width: 97%;">
+              </td>
+              <td colspan="3">
+                <input type="text" id="oreintador" name="oreintador" style="width: 96.5%;">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="bolza">Bolsa:</label>
+              </td>
+              <td>
+                <label for="entidade">Entidade Financeira</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="bolza" id="bolza">
+                  <option value=""></option>
+                  <option value="1">Sim</option>
+                  <option value="2">Não</option>
+                </select>
+              </td>
+              <td colspan="1">
+                <input type="text" id="entidade" name="entidade" style="width: 98%;">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Endereço Preferencial Para Correspondência</legend>
+          <input type="radio" name="profissas" id="profissionalP">
+          <label for="profissionalP">Profissional</label>
+          <input type="radio" name="profissas" id="residencialP">
+          <label for="residencialP">Residêncial</label>
+        </fieldset>
+      </fieldset>
+      <fieldset class="secondary">
+        <legend class="title">&nbsp; Atuação Profissional &nbsp;</legend>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Instituição de Trabalho</legend>
+          <table>
+            <tr>
+              <td style="width: 85%;">
+                <label for="empresa">Instituição/Empresa</label>
+              </td>
+              <td>
+                <label for="sigla">Sigla</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="empresa" name="empresa" style="width: 98%;">
+              </td>
+              <td>
+                <input type="text" id="sigla" name="sigla">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Atividade(s) Exercida(s) na Instituição</legend>
+          <input type="checkbox" name="1" id="1"><label for="1">Conselhos, comissões e consultoria</label><br>
+          <input type="checkbox" name="2" id="2"><label for="2">Direção e administração</label><br>
+          <input type="checkbox" name="3" id="3"><label for="3">Ensino</label><br>
+          <input type="checkbox" name="4" id="4"><label for="4">Estágio</label><br>
+          <input type="checkbox" name="5" id="5"><label for="5">Extensão universitária</label><br>
+          <input type="checkbox" name="6" id="6"><label for="6">Pesquisa e desenvolvimento</label><br>
+          <input type="checkbox" name="7" id="7"><label for="7">Serviços técnicos e especializados</label><br>
+          <input type="checkbox" name="8" id="8"><label for="8">Treinamentos ministrados</label><br>
+          <input type="checkbox" name="9" id="9"><label for="9">Outras atividades técnico-científicas</label><br>
+        </fieldset>
+        <fieldset class="tertiary">
+          <legend class="subtitle">Vínculo Institucional</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="bolsas">Bolsa:</label>
+              </td>
+              <td>
+                <label for="inicio">Início</label>
+              </td>
+              <td>
+                <label for="fim">Fim</label>
+              </td>
+              <td>
+                <label for="tipoVei">Tipo de Vínculo:</label>
+              </td>
+              <td>
+                <label for="carga">Carga Horária Semanal</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="bolsas" id="bolsas">
+                  <option value=""></option>
+                  <option value="1">Anterior</option>
+                  <option value="2">Atual</option>
+                </select>
+              </td>
+              <td>
+                <input type="date" id="inicio" name="inicio">
+              </td>
+              <td>
+                <input type="date" id="fim" name="fim">
+              </td>
+              <td>
+                <select name="tipoVei" id="tipoVei">
+                  <option value=""></option>
+                  <option value="1">Servidor Público</option>
+                  <option value="2">Celetista</option>
+                  <option value="3">Outro</option>
+                </select>
+              </td>
+              <td style="width: 42.5%;">
+                <input type="text" id="carga" name="carga" style="width: 100%;">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+    </form>
+  </main>
+
+</body>
+
+</html>
